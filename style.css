@@ -92,7 +92,7 @@ header{
     color: greenyellow;
     visibility: visible;
 }
-.forms-control.error i.fa-check-circle{
+.forms-control.error i.fa-exclamation-circle{
     color: rgb(227, 65, 65);
     visibility: visible;
 }
@@ -104,4 +104,9 @@ header{
 .forms-control.error i.fa-solid fa-exclamation-circle{
     color: rgb(227, 65, 65);
     visibility: visible;
+}
+
+.forms-control.error small{
+    visibility: visible;
+    color: rgb(227, 65, 65);
 }

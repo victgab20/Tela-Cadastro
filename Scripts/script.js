@@ -21,7 +21,7 @@ function checkInput() {
     const passwordConfirmationValue = passwordConfirmation.value;
 
     if(usernameValue === ""){
-        setErrorFor(username, "nome de usuario é obrigatório");
+        setErrorFor(username, "Nome de usuario é obrigatório");
     } else{
         setSuccessFor(username);
     }
@@ -35,7 +35,9 @@ function checkInput() {
     }
 
     if(passwordValue === ""){
+        
         setErrorFor(password,"A senha é obrigatória.");
+
     } else if(passwordValue.length < 7){
         setErrorFor(password, "A senha precisa ter mais de 7 caracteries.");
     } else{
@@ -52,14 +54,6 @@ function checkInput() {
     }
 
     const formsControl = forms.querySelectorAll('.form-control')
-    
-    const formsIsValid = [... formsControl].every(( formsControl) => {
-        return (formsControl.className === "forms-control success");
-    });
-    if(formsIsValid){
-        alert("O Formulário foi enviado");
-    }
-
 }
 
     function setSuccessFor(input){
